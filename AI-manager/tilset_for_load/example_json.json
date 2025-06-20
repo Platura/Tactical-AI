@@ -1,0 +1,30 @@
+{
+	"name": "sniper",
+	"sensors": [
+		{
+			"Type": "ReadPositionSensor",
+			"name": "position",
+			"field_name": "position"
+		},
+		{
+			"Type":"LifeTime",
+			"field_name":"life_time"
+		}
+	],
+	"options" :{
+		"fire":{
+			"consideration": [
+				{
+					"Type": "Distance",
+					"From": "position",
+					"To": "somve value in blackboard
+				}
+			]
+			"actions": [
+				{
+					""
+				}
+			]
+		}
+	}
+}

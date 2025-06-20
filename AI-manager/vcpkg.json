@@ -1,0 +1,17 @@
+{
+    "dependencies": [
+        "fmt",
+
+        "imgui",
+        "imgui-sfml",
+        "nlohmann-json"
+    ],
+    "builtin-baseline": "f0f811770e0538fcb295a1750c0a5e0de5131d29",
+    "overrides": [
+        {
+            "name": "sfml",
+            "version": "2.6.2#0"
+        }
+    ]
+
+}

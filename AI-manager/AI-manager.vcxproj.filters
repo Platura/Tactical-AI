@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien\Components">
+      <UniqueIdentifier>{4faf5122-36f9-4b17-b5c3-16f28c7c5a71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Components">
+      <UniqueIdentifier>{ae806291-54ad-4f14-acf6-ba6b68ed3544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Actions">
+      <UniqueIdentifier>{6242f360-42db-4f1b-bcbb-443f9b44966d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Actions">
+      <UniqueIdentifier>{6dfd9fff-9cb3-49aa-98d2-407e492ff2bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Consideration">
+      <UniqueIdentifier>{9287973e-c03e-4069-941d-6265d1a010ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Consideration">
+      <UniqueIdentifier>{7741307b-9a80-4544-ab6f-e7c0f55c6033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Maps">
+      <UniqueIdentifier>{ba2959b4-519e-442a-97e3-77cbe1174014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Maps">
+      <UniqueIdentifier>{b3a80017-6450-4310-a396-f469e7b008d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="roles agent json">
+      <UniqueIdentifier>{d1ab09f5-48a2-44e5-8298-2ad5d5fd7885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="roles patrol json">
+      <UniqueIdentifier>{f1558bd7-da49-4f8a-8636-4e09839feb27}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="AgentManager.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="MovementComponent.cpp">
+      <Filter>Quelldateien\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Target.cpp">
+      <Filter>Quelldateien\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="IComponent.cpp">
+      <Filter>Quelldateien\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicComponent.cpp">
+      <Filter>Quelldateien\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetSet.cpp">
+      <Filter>Quelldateien\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="RunToTargetAction.cpp">
+      <Filter>Quelldateien\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="OldAction.cpp">
+      <Filter>Quelldateien\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="ShootTargetAction.cpp">
+      <Filter>Quelldateien\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionComponent.cpp">
+      <Filter>Quelldateien\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Quelldateien\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="MeleeAction.cpp">
+      <Filter>Quelldateien\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="TakeCoverAction.cpp">
+      <Filter>Quelldateien\Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsiderationAmmunitionReserve.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsiderationEnemyDistance.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsiderationMeleeDamage.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="ReasonerComponent.cpp">
+      <Filter>Quelldateien\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsiderationGunDamage.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="Cover.cpp">
+      <Filter>Quelldateien\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="LocationSet.cpp">
+      <Filter>Quelldateien\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineDataInput.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineDataOutput.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Flowfield.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="MapDebugDisplay.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="MapManager.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMap.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="Costfield.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthBar.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthBarComponent.cpp">
+      <Filter>Quelldateien\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="NameTagComponent.cpp">
+      <Filter>Quelldateien\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Utility-manager\ConstConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="AiMemoryComponent.cpp">
+      <Filter>Quelldateien\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="DeathComponent.cpp">
+      <Filter>Quelldateien\Components</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Grid.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="AgentManager.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Target.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="MovementComponent.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="IComponent.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicComponent.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="TargetSet.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="OldAction.h">
+      <Filter>Headerdateien\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="RunToTargetAction.h">
+      <Filter>Headerdateien\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="MathHelpers.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionComponent.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="ShootTargetAction.h">
+      <Filter>Headerdateien\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="MeleeAction.h">
+      <Filter>Headerdateien\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="TakeCoverAction.h">
+      <Filter>Headerdateien\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsiderationAmmunitionReserve.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsiderationEnemyDistance.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsiderationMeleeDamage.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsiderationGunDamage.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="Cover.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="LocationSet.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="ReasonerComponent.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineDataInput.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineDataOutput.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Flowfield.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="MapDebugDisplay.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="MapManager.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="Costfield.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMap.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthBarComponent.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="NameTagComponent.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AiMemoryComponent.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="DeathComponent.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthBar.h">
+      <Filter>Headerdateien\Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vcpkg.json" />
+    <None Include="demo.json" />
+    <None Include="move_demo.json" />
+    <None Include="threat_demo.json" />
+    <None Include="flank_role.json">
+      <Filter>roles agent json</Filter>
+    </None>
+    <None Include="front_role.json">
+      <Filter>roles agent json</Filter>
+    </None>
+    <None Include="rear_role.json">
+      <Filter>roles agent json</Filter>
+    </None>
+    <None Include="standard_patrol.json">
+      <Filter>roles patrol json</Filter>
+    </None>
+    <None Include="moving_patrol.json">
+      <Filter>roles patrol json</Filter>
+    </None>
+    <None Include="sitting_duck.json">
+      <Filter>roles patrol json</Filter>
+    </None>
+    <None Include="sensor.json">
+      <Filter>roles agent json</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,117 @@
+{
+  "blackboard": {
+    "target": {
+      "x": 460,
+      "y": 460
+    },
+    "target_2": {
+      "x": 420,
+      "y": 230
+    },
+    "counter": 0.0
+  },
+  "sensors": [
+    {
+      "Type": "PositionSensor",
+      "field_name": "position"
+    },
+    {
+      "Type": "VisibilitySensor",
+      "field_name": "Visibility"
+    },
+    {
+      "Type": "AmbushSensor",
+      "field_name": "Ambush"
+    },
+    {
+      "Type": "HealthSensor",
+      "field_name": "current_hp"
+    }
+  ],
+  "reasoner": {
+    "Type": "UtilityReasoner",
+    "options": [
+      {
+        "name": "got_to_A",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "BlackboardValue",
+            "value": "self.counter"
+          }
+        ],
+        "actions": [
+          {
+            "Type": "Set",
+            "name": "self.counter",
+            "value": 0.0
+          },
+          {
+            "Type": "MoveTo",
+            "target": "self.target"
+          }
+        ]
+      },
+      {
+        "name": "idle",
+        "interruptible": true,
+        "considerations": [
+          {
+            "Type": "Const",
+            "value": 0.3
+          }
+
+        ],
+        "actions": [
+          {
+            "Type": "sleep",
+            "time": 10
+          }
+        ]
+      },
+      {
+        "name": "search_attacker",
+        "interruptible": true,
+        "considerations": [
+          {
+            "Type": "IsHit"
+          }
+        ],
+        "actions": [
+          {
+            "Type": "LookAround"
+          }
+
+        ]
+      },
+      {
+        "name": "attack_on_sight",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "Visible",
+            "target_team": 1
+          }
+        ],
+        "actions": [
+          {
+            "Type": "TakeAim",
+            "direction": "direction"
+          },
+          {
+            "Type": "sleep",
+            "time": 1
+          },
+          {
+            "Type": "ShootAt",
+            "ammunition": "ammunition"
+          },
+          {
+            "Type": "sleep",
+            "time": 1
+          }
+        ]
+      }
+    ]
+  }
+}

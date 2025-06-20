@@ -1,0 +1,9 @@
+{
+  "dependencies": [
+    "fmt",
+    "sfml",
+    "imgui",
+    "imgui-sfml"
+  ],
+  "builtin-baseline": "f0f811770e0538fcb295a1750c0a5e0de5131d29"
+}

@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{7ac2ebf5-da6f-457f-af9d-a40d66ca81de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{257e2f40-9c61-42a0-9861-bb4a7071fc3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Function">
+      <UniqueIdentifier>{b6f654bb-7522-4710-a50e-e5fc6ec7b39f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Consideration">
+      <UniqueIdentifier>{76ece627-3a42-418c-a911-2407e4a70c08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Consideration">
+      <UniqueIdentifier>{bf49f24b-3d0b-4663-a584-552ac7e2794a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Function">
+      <UniqueIdentifier>{dba2e38e-923a-49b0-852c-5a3a505901c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Blackboard">
+      <UniqueIdentifier>{5415a300-14f3-43c0-be94-c8039a7b6ba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Blackboard">
+      <UniqueIdentifier>{cb03399b-37df-4e05-b33e-5bb7110594fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Sensors">
+      <UniqueIdentifier>{45357cbc-9cd4-4c2a-b981-94210d6621db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Sensors">
+      <UniqueIdentifier>{f846a8dc-df8f-4178-a05f-bd0cc2fccadf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Reasoner">
+      <UniqueIdentifier>{ead29db6-5189-446f-b286-3b2fbbf1f777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Reasoner">
+      <UniqueIdentifier>{86dfcbe2-b83b-45aa-8eab-ac30c44bf016}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Aktion">
+      <UniqueIdentifier>{6a3580bd-2047-4dd4-9827-46a262f4b52e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Aktion">
+      <UniqueIdentifier>{6bcd81f9-5290-46ec-bc53-c08b251f8267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Maps">
+      <UniqueIdentifier>{2f5062d8-cc21-4f7e-916c-ca1dca64ae6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Maps">
+      <UniqueIdentifier>{88c0dfb7-f976-4357-8ead-a17679bfccd7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Option.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IFunction.h">
+      <Filter>Headerdateien\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)LinearFunction.h">
+      <Filter>Headerdateien\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ConstConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MathFunctions.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ConsiderationArithmeticAverage.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Blackboard.h">
+      <Filter>Headerdateien\Blackboard</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Types.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)BlackboardManager.h">
+      <Filter>Headerdateien\Blackboard</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ISensor.h">
+      <Filter>Headerdateien\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)LifeTimeSensor.h">
+      <Filter>Headerdateien\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PositionSensor.h">
+      <Filter>Headerdateien\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AgentBrain.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IEngineDataInput.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Factory.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AiEngine.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IdentityFunction.h">
+      <Filter>Headerdateien\Function</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IReasoner.h">
+      <Filter>Headerdateien\Reasoner</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)StanceSensor.h">
+      <Filter>Headerdateien\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)UtilityReasoner.h">
+      <Filter>Headerdateien\Reasoner</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SequenceReasoner.h">
+      <Filter>Headerdateien\Reasoner</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)DistanceConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)BlackboardAddr.h">
+      <Filter>Headerdateien\Blackboard</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IOneTimeAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IncrementAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)BlackboardValueConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SetAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SleepAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IEngineDataOutput.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MoveToAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ThreatSensor.h">
+      <Filter>Headerdateien\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)InfluenceMap.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)EngineDebugData.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ThreatConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GlobalVisibilityMap.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TacticalMap.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AgentVisibilityMap.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)VisibilitySensor.h">
+      <Filter>Headerdateien\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AmbushMap.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AmbushSensor.h">
+      <Filter>Headerdateien\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SelectTargetAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ComputeAmbushAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ComputeCostAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SelectPositionAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ShootAtAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TakeAimAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CoverSensor.h">
+      <Filter>Headerdateien\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CoverMap.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GlobalVisibilitySensor.h">
+      <Filter>Headerdateien\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)NearestTargetConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ComputeHiddenCoverAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)InRangeConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)HasTargetConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IsAliveConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)HiddenCoverMap.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)RemoveTargetAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MovementMap.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ReloadAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)HealthConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AmmunitionConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)NearestCoverConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CostSensor.h">
+      <Filter>Headerdateien\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SelectCoverAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)VisibleConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)DangerConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SpottedSensor.h">
+      <Filter>Headerdateien\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IsSpottedConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)FrontSensor.h">
+      <Filter>Headerdateien\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)NearestFrontConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)HealthSensor.h">
+      <Filter>Headerdateien\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SelectFrontAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)LookAroundAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IsHitConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TestMovementSensor.h">
+      <Filter>Headerdateien\Sensors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SelectHoldAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IsCloseConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)HealAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SaveFrontMap.h">
+      <Filter>Headerdateien\Maps</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)HasFollowConsideration.h">
+      <Filter>Headerdateien\Consideration</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SelectFollowAction.h">
+      <Filter>Headerdateien\Aktion</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SetVectorAction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Option.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IFunction.cpp">
+      <Filter>Quelldateien\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)LinearFunction.cpp">
+      <Filter>Quelldateien\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ConsiderationArithmeticAverage.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Blackboard.cpp">
+      <Filter>Quelldateien\Blackboard</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)BlackboardManager.cpp">
+      <Filter>Quelldateien\Blackboard</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ISensor.cpp">
+      <Filter>Quelldateien\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)LifeTimeSensor.cpp">
+      <Filter>Quelldateien\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PositionSensor.cpp">
+      <Filter>Quelldateien\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IEngineDataInput.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AgentBrain.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AiEngine.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Factory.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IdentityFunction.cpp">
+      <Filter>Quelldateien\Function</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IReasoner.cpp">
+      <Filter>Quelldateien\Reasoner</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)StanceSensor.cpp">
+      <Filter>Quelldateien\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)UtilityReasoner.cpp">
+      <Filter>Quelldateien\Reasoner</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SequenceReasoner.cpp">
+      <Filter>Quelldateien\Reasoner</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)DistanceConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IOneTimeAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IncrementAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)BlackboardValueConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SetAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SleepAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IEngineDataOutput.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MoveToAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ThreatSensor.cpp">
+      <Filter>Quelldateien\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)InfluenceMap.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)EngineDebugData.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ThreatConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GlobalVisibilityMap.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)TacticalMap.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AgentVisibilityMap.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)VisibilitySensor.cpp">
+      <Filter>Quelldateien\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AmbushMap.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AmbushSensor.cpp">
+      <Filter>Quelldateien\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SelectTargetAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SelectPositionAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ComputeCostAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ComputeAmbushAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ShootAtAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)TakeAimAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CoverSensor.cpp">
+      <Filter>Quelldateien\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CoverMap.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ComputeHiddenCoverAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GlobalVisibilitySensor.cpp">
+      <Filter>Quelldateien\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)NearestTargetConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)InRangeConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)HasTargetConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IsAliveConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)RemoveTargetAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)HiddenCoverMap.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MovementMap.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ReloadAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AmmunitionConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)HealthConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)NearestCoverConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SelectCoverAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CostSensor.cpp">
+      <Filter>Quelldateien\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)VisibleConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)DangerConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SpottedSensor.cpp">
+      <Filter>Quelldateien\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IsSpottedConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)FrontSensor.cpp">
+      <Filter>Quelldateien\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)NearestFrontConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)HealthSensor.cpp">
+      <Filter>Quelldateien\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SelectFrontAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)LookAroundAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IsHitConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)TestMovementSensor.cpp">
+      <Filter>Quelldateien\Sensors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SelectHoldAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IsCloseConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)HealAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SaveFrontMap.cpp">
+      <Filter>Quelldateien\Maps</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SelectFollowAction.cpp">
+      <Filter>Quelldateien\Aktion</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)HasFollowConsideration.cpp">
+      <Filter>Quelldateien\Consideration</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)SetVectorAction.cpp" />
+  </ItemGroup>
+</Project>

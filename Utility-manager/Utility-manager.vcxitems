@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{19bafc09-1d4b-48e4-8443-48cc90155fe6}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AgentVisibilityMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AiEngine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AmbushMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AmbushSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AmmunitionConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Blackboard.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)BlackboardAddr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)BlackboardManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)BlackboardValueConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ComputeAmbushAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ComputeCostAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ComputeHiddenCoverAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ConsiderationArithmeticAverage.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CostSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CoverMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CoverSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DangerConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DistanceConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)EngineDebugData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)FrontSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GlobalVisibilitySensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)HasFollowConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)HasTargetConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)HealAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)HealthConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)HealthSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)HiddenCoverMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IEngineDataOutput.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IncrementAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)InRangeConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IOneTimeAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IsAliveConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IsCloseConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IsHitConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IsSpottedConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LookAroundAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MovementMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MoveToAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)NearestCoverConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)NearestFrontConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)NearestTargetConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Option.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AgentBrain.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ConstConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Factory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IdentityFunction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IEngineDataInput.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IFunction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IReasoner.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ISensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LifeTimeSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LinearFunction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MathFunctions.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PositionSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ReloadAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RemoveTargetAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SaveFrontMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SelectCoverAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SelectFollowAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SelectFrontAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SelectHoldAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SelectPositionAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SelectTargetAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SequenceReasoner.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SetAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SetVectorAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ShootAtAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SleepAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SpottedSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TacticalMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TakeAimAction.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TestMovementSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ThreatConsideration.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)InfluenceMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ThreatSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UtilityReasoner.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)StanceSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Types.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GlobalVisibilityMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)VisibilitySensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)VisibleConsideration.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AgentVisibilityMap.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)AiEngine.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)AmbushMap.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)AmbushSensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)AmmunitionConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Blackboard.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)BlackboardManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)BlackboardValueConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ComputeAmbushAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ComputeCostAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ComputeHiddenCoverAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ConsiderationArithmeticAverage.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CostSensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CoverMap.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CoverSensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DangerConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DistanceConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)EngineDebugData.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)FrontSensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GlobalVisibilitySensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)HasFollowConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)HasTargetConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)HealAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)HealthConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)HealthSensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)HiddenCoverMap.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IEngineDataOutput.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IncrementAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)InRangeConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IOneTimeAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IsAliveConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IsCloseConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IsHitConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IsSpottedConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)LookAroundAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MovementMap.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MoveToAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NearestCoverConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NearestFrontConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NearestTargetConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Option.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)AgentBrain.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Factory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IdentityFunction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IEngineDataInput.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IFunction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)IReasoner.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ISensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)LifeTimeSensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)LinearFunction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PositionSensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ReloadAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)RemoveTargetAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SaveFrontMap.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SelectCoverAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SelectFollowAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SelectFrontAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SelectHoldAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SelectPositionAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SelectTargetAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SequenceReasoner.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SetAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SetVectorAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ShootAtAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SleepAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SpottedSensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TacticalMap.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TakeAimAction.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TestMovementSensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ThreatConsideration.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)InfluenceMap.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ThreatSensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)UtilityReasoner.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)StanceSensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)GlobalVisibilityMap.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)VisibilitySensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)VisibleConsideration.cpp" />
+  </ItemGroup>
+</Project>

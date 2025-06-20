@@ -1,0 +1,70 @@
+{
+  "blackboard": {
+    "target": {
+      "x": 0,
+      "y": 50
+    },
+    "target_2": {
+      "x": 10,
+      "y": 50
+    },
+    "age": 100.0,
+    "counter": 0
+  },
+  "sensors": [
+    {
+      "Type": "LifeTimeSensor",
+      "field_name": "life_time"
+    }
+  ],
+  "reasoner": {
+    "Type": "UtilityReasoner",
+    "options": [
+      {
+        "name": "set_null",
+        "considerations": [
+          {
+            "Type": "BlackboardValue",
+            "value": "self.counter"
+          }
+        ],
+        "actions": [
+          {
+            "Type": "Set",
+            "name": "self.counter",
+            "value": "0.f",
+            "weight": {
+              "Type": "Linear",
+              "min": 1,
+              "max": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "increment",
+        "considerations": [
+          {
+            "Type": "BlackboardValue",
+            "value": "self.counter",
+            "weight": {
+              "Type": "Linear",
+              "min": 1,
+              "max": 0
+            }
+          }
+        ],
+        "actions": [
+          {
+            "Type": "increment",
+            "name": "self.counter"
+          },
+          {
+            "Type": "Sleep",
+            "time": 10
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "blackboard": {
+    "target": {
+      "x": 50,
+      "y": 50
+    },
+    "time": 30,
+    "counter": 0.0
+  },
+  "sensors": [
+    {
+      "Type": "PositionSensor",
+      "field_name": "position"
+    },
+    {
+      "Type": "VisibilitySensor",
+      "field_name": "Visibility"
+    },
+    {
+      "Type": "CoverSensor",
+      "field_name": "cover"
+    },
+    {
+      "Type": "CostSensor",
+      "field_name": "Cost"
+    },
+    {
+      "Type": "HealthSensor",
+      "field_name": "current_hp"
+    }
+  ],
+  "reasoner": {
+    "Type": "UtilityReasoner",
+    "options": [
+      {
+        "name": "idle",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "Const",
+            "value": 0.3
+          }
+
+        ],
+        "actions": [
+          {
+            "Type": "sleep",
+            "time": 10
+          }
+        ]
+      },
+
+      {
+        "name": "attack_on_sight",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "Visible",
+            "target_team": 0
+          }
+        ],
+        "actions": [
+          {
+            "Type": "TakeAim",
+            "direction": "direction"
+          },
+          {
+            "Type": "sleep",
+            "time": 1
+          },
+          {
+            "Type": "ShootAt",
+            "ammunition": "ammunition"
+          },
+          {
+            "Type": "sleep",
+            "time": 1
+          }
+        ]
+      },
+      {
+        "name": "follow_front",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "IsClose",
+            "weight": {
+              "Type": "Linear",
+              "min": 1,
+              "max": 0
+            }
+          },
+          {
+            "Type": "HasFollow"
+          }
+
+        ],
+        "actions": [
+          {
+            "Type": "SelectHold"
+          },
+          {
+            "Type": "MoveTo",
+            "target": "self.target"
+          }
+        ]
+      },
+      {
+        "name": "select_follow",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "HasFollow",
+            "weight": {
+              "Type": "Linear",
+              "min": 1,
+              "max": 0
+            }
+          }
+
+        ],
+        "actions": [
+          {
+            "Type": "SelectFollow",
+            "front_agent": "front_agent"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "blackboard": {
+    "target": {
+      "x": 50,
+      "y": 50
+    },
+    "time": 30,
+    "counter": 0.0,
+    "ammunition":  100
+  },
+  "sensors": [
+    {
+      "Type": "PositionSensor",
+      "field_name": "position"
+    },
+    {
+      "Type": "VisibilitySensor",
+      "field_name": "Visibility"
+    },
+    {
+      "Type": "CoverSensor",
+      "field_name": "cover"
+    },
+    {
+      "Type": "CostSensor",
+      "field_name": "Cost"
+    }
+  ],
+  "reasoner": {
+    "Type": "UtilityReasoner",
+    "options": [
+      {
+        "name": "idle",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "Const",
+            "value": 0.3
+          }
+
+        ],
+        "actions": [
+          {
+            "Type": "sleep",
+            "time": 10
+          }
+        ]
+      },
+      {
+        "name": "move_closer",
+        "interruptible": true,
+        "considerations": [
+          {
+            "Type": "NearestTarget",
+            "target_team": 0,
+            "position": "self.position",
+            "nearest_id": "nearest_id",
+            "weight": {
+              "Type": "Linear",
+              "min": 0,
+              "max": 1000
+            }
+          }
+
+        ],
+        "actions": [
+          {
+            "Type": "SelectFront"
+          },
+          {
+            "Type": "MoveTo",
+            "target": "self.target"
+          }
+        ]
+      },
+      {
+        "name": "select_target",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "NearestTarget",
+            "target_team": 0,
+            "position": "self.position",
+            "nearest_id": "nearest_id",
+            "weight": {
+              "Type": "Linear",
+              "min": 1000,
+              "max": 0
+            }
+          },
+          {
+            "Type": "HasTarget",
+            "weight": {
+              "Type": "Linear",
+              "min": 1,
+              "max": 0
+            }
+          }
+        ],
+        "actions": [
+          {
+            "Type": "SelectTarget",
+            "agent_target": "agent_target"
+          },
+          {
+            "Type": "ComputeAmbush",
+            "ambush": "ambush"
+          },
+          {
+            "Type": "SelectPosition",
+            "position_target": "position_target"
+          },
+          {
+            "Type": "ComputeCost",
+            "modified_cost": "modified_cost"
+          },
+          {
+            "Type": "MoveTo",
+            "target": "self.target"
+          }
+        ]
+      },
+      {
+        "name": "shoot",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "InRange",
+            "target_team": 0,
+            "position": "self.position",
+            "nearest_id": "nearest_id"
+          },
+          {
+            "Type": "HasTarget"
+          },
+          {
+            "Type": "IsAlive",
+            "target_team": 0,
+            "target": "target"
+          }
+        ],
+        "actions": [
+          {
+            "Type": "TakeAim",
+            "direction": "direction"
+          },
+          {
+            "Type": "sleep",
+            "time": 1
+          },
+          {
+            "Type": "ShootAt",
+            "ammunition": "ammunition"
+          },
+          {
+            "Type": "sleep",
+            "time": 1
+          }
+
+        ]
+      },
+      {
+        "name": "remove_target",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "HasTarget"
+          },
+          {
+            "Type": "IsAlive",
+            "target_team": 0,
+            "target": "target",
+            "weight": {
+              "Type": "Linear",
+              "min": 1,
+              "max": 0
+            }
+          }
+        ],
+        "actions": [
+          {
+            "Type": "RemoveTarget",
+            "agent": 5
+          }
+        ]
+      },
+      {
+        "name": "reload_covered",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "Ammunition",
+            "max_munition": 100,
+            "weight": {
+              "Type": "Linear",
+              "min": 1,
+              "max": 0
+            }
+          }
+        ],
+        "actions": [
+          {
+            "Type": "SelectCover",
+            "hidden_cover": "hidden_cover",
+            "nearest_cover": "nearest_cover",
+            "movement_map": "movement_map",
+            "best_cover": "best_cover",
+            "win_cover": "win_cover"
+          },
+          {
+            "Type": "MoveTo",
+            "target": "self.target"
+          },
+          {
+            "Type": "Reload",
+            "ammunition": "ammunition"
+          }
+        ]
+      },
+      {
+        "name": "retreat",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "Danger",
+            "value": "team.Threat",
+            "position": "self.position"
+          },
+          {
+            "Type": "IsSpotted"
+          }
+        ],
+        "actions": [
+          {
+            "Type": "SelectCover",
+            "hidden_cover": "hidden_cover",
+            "nearest_cover": "nearest_cover",
+            "movement_map": "movement_map",
+            "best_cover": "best_cover",
+            "win_cover": "win_cover"
+          },
+          {
+            "Type": "MoveTo",
+            "target": "self.target"
+          }
+        ]
+      }
+    ]
+  }
+}

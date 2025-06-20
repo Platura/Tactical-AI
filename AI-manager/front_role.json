@@ -1,0 +1,196 @@
+{
+  "blackboard": {
+    "target": {
+      "x": 50,
+      "y": 50
+    },
+    "time": 30,
+    "counter": 0.0,
+    "ammunition": 100,
+    "agent_type": 1
+  },
+  "sensors": [
+    {
+      "Type": "PositionSensor",
+      "field_name": "position"
+    },
+    {
+      "Type": "VisibilitySensor",
+      "field_name": "Visibility"
+    },
+    {
+      "Type": "CoverSensor",
+      "field_name": "cover"
+    },
+    {
+      "Type": "CostSensor",
+      "field_name": "Cost"
+    },
+    {
+      "Type": "FrontSensor",
+      "field_name": "Front"
+    },
+    {
+      "Type": "HealthSensor",
+      "field_name": "current_hp"
+    }
+  ],
+  "reasoner": {
+    "Type": "UtilityReasoner",
+    "options": [
+      {
+        "name": "idle",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "Const",
+            "value": 0.3
+          }
+        ],
+        "actions": [
+          {
+            "Type": "Heal"
+          },
+          {
+            "Type": "sleep",
+            "time": 10
+          },
+          {
+            "Type": "Set",
+            "name": "front_target",
+            "value": {
+              "x": 0.0,
+              "y": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "name": "react_to_spotted",
+        "interruptible": true,
+        "considerations": [
+          {
+            "Type": "IsSpotted"
+          }
+        ],
+        "actions": [
+          {
+            "Type": "LookAround"
+          }
+        ]
+      },
+      {
+        "name": "select_front",
+        "interruptible": true,
+        "considerations": [
+          {
+            "Type": "NearestFront",
+            "weight": {
+              "Type": "Linear",
+              "min": 1,
+              "max": 0
+            }
+          },
+          {
+            "Type": "IsSpotted",
+            "weight": {
+              "Type": "Linear",
+              "min": 1,
+              "max": 0
+            }
+          },
+          {
+            "Type": "Const",
+            "value":  0.9
+          }
+        ],
+        "actions": [
+          {
+            "Type": "SelectFront"
+          },
+          {
+            "Type": "MoveTo",
+            "target": "self.target"
+          }
+        ]
+      },
+      {
+        "name": "search_attacker",
+        "interruptible": true,
+        "considerations": [
+          {
+            "Type": "IsHit"
+          }
+        ],
+        "actions": [
+          {
+            "Type": "LookAround"
+          }
+
+        ]
+      },
+      {
+        "name": "attack_on_sight",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "Visible",
+            "target_team": 0
+          }
+        ],
+        "actions": [
+          {
+            "Type": "TakeAim",
+            "direction": "direction"
+          },
+          {
+            "Type": "sleep",
+            "time": 1
+          },
+          {
+            "Type": "ShootAt",
+            "ammunition": "ammunition"
+          },
+          {
+            "Type": "sleep",
+            "time": 1
+          }
+        ]
+      },
+      {
+        "name": "reload",
+        "interruptible": false,
+        "considerations": [
+          {
+            "Type": "Ammunition",
+
+            "max_munition": 100,
+            "weight": {
+              "Type": "Linear",
+              "min": 1,
+              "max": 0
+            }
+          }
+        ],
+        "actions": [
+          {
+            "Type": "SelectCover",
+            "hidden_cover": "hidden_cover",
+            "nearest_cover": "nearest_cover",
+            "movement_map": "movement_map",
+            "best_cover": "best_cover",
+            "win_cover": "win_cover"
+          },
+          {
+            "Type": "MoveTo",
+            "target": "self.target"
+          },
+          {
+            "Type": "Reload",
+            "ammunition": "ammunition"
+          }
+        ]
+      }
+    ]
+  }
+}

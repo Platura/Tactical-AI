@@ -1,0 +1,49 @@
+{
+    "blackboard": {
+        "target": {
+            "x": 460,
+            "y": 460
+        },
+        "counter": 0.0
+    },
+    "sensors": [
+        {
+            "Type": "VisibilitySensor",
+            "field_name": "Visibility"
+        },
+        {
+            "Type": "PositionSensor",
+            "field_name": "position"
+        },
+        {
+            "Type": "AmbushSensor",
+            "field_name": "Ambush"
+        }
+    ],
+    "reasoner": {
+        "Type": "UtilityReasoner",
+        "options": [
+            {
+                "name": "got_to_A",
+                "interruptible": false,
+                "considerations": [
+                    {
+                        "Type": "BlackboardValue",
+                        "value": "self.counter"
+                    }
+                ],
+                "actions": [
+                    {
+                        "Type": "Set",
+                        "name": "self.counter",
+                        "value": 0.0
+                    },
+                    {
+                        "Type": "MoveTo",
+                        "target": "self.target"
+                    }
+                ]
+            }
+        ]
+    }
+}

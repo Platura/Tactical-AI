@@ -1,0 +1,6 @@
+.vs
+x64
+Debug
+*/Debug
+imgui.ini
+vcpkg_installed/
